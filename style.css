@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    min-height: 100vh;
+    background-image: url(laptop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.part-logo{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+
+nav {
+    background-color: whitesmoke;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    height: 50px;
+}
+nav a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    padding: 0 30px;
+
+}
+
+nav a:hover {
+background-color: lightgray;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(245, 245, 245, 0.445);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+
+.nav-icon {
+    color: black;
+}
+
+.fa-xmark {
+    color: rgb(102, 99, 99);
+    margin: 10px;
+    font-size: 25px;
+    margin-left: 30px;
+
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    
+    .sidebar  {
+        width: 100%;
+    }
+}
